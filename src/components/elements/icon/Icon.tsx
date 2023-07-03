@@ -9,7 +9,7 @@ export interface Icon {
     title?: string;
 }
 
-export const Icon = memo((props: Icon) => {
+function Icon(props: Icon) {
     const color = props?.color || "white";
     const scale = props?.scale || 1;
     const title = props?.title || "";
@@ -21,6 +21,6 @@ export const Icon = memo((props: Icon) => {
             {Icons && <Icons />}
         </Style>
     );
-});
+}
 
-export default Icon;
+export default memo(Icon);

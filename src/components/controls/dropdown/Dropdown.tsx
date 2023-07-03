@@ -109,7 +109,7 @@ export default function Dropdown(props: Dropdown) {
                         <Controls.Button icon={option?.icon} />
                     ) : (
                         <>
-                            {option && typeof option[imgName] !== "undefined" && <Image src={`${option[imgName]}`} fill alt={""} />}
+                            {option && typeof option[imgName] !== "undefined" && <Image src={`${option[imgName]}`} width={0} height={0} alt={""} />}
                             <span
                                 title={
                                     typeof option === "undefined"
@@ -154,7 +154,7 @@ export default function Dropdown(props: Dropdown) {
                                     <>
                                         {typeof v[imgName] !== "undefined" && v[imgName] !== "" ? (
                                             <>
-                                                <Image src={`${v[imgName]}`} fill alt={""} />
+                                                <Image src={`${v[imgName]}`} width={0} height={0} alt={""} />
                                                 <span title={typeof v[keyIndex] !== "undefined" ? v[keyIndex] : typeof v[keyName] !== "undefined" ? v[keyName] : v}>
                                                     {typeof v[keyIndex] !== "undefined" ? v[keyIndex] : typeof v[keyName] !== "undefined" ? v[keyName] : v}
                                                 </span>
