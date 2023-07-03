@@ -18,7 +18,7 @@ export const Icon = memo((props: Icon) => {
 
     return (
         <Style title={title} $color={color} $scale={scale}>
-            {Icons && <Icons />}
+            {Icons !== "" && <Icons />}
         </Style>
     );
 });
