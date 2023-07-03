@@ -9,7 +9,7 @@ export interface Icon {
     title?: string;
 }
 
-function Icon(props: Icon) {
+export function Icon(props: Icon) {
     const color = props?.color || "white";
     const scale = props?.scale || 1;
     const title = props?.title || "";
